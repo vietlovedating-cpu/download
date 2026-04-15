@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Download VietDating</title>
 
+  <script>
+    function redirect() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Android
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME";
+      }
+      // iOS
+      else if (/iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.href = "https://apps.apple.com/app/idYOUR_APP_ID";
+      }
+    }
+  </script>
+</head>
+
+<body onload="redirect()" style="text-align:center; font-family:sans-serif; padding-top:50px;">
+  <h2>Download VietDating</h2>
+
+  <p>If not redirected, choose your device:</p>
+
+  <br>
+
+  <a href="https://apps.apple.com/app/idYOUR_APP_ID">
+    🍎 Download on App Store
+  </a>
+
+  <br><br>
+
+  <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME">
+    🤖 Get it on Google Play
+  </a>
+
+</body>
+</html>
