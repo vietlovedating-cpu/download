@@ -2,17 +2,39 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Download VietDating</title>
+  <title>Download VietLoveDating</title>
+
+  <script>
+    function redirect() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Android
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.vietlovedating.app";
+      }
+      // iOS
+      else if (/iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.href = "https://apps.apple.com/app/id6762517920";
+      }
+    }
+  </script>
 </head>
 
-<body style="text-align:center; font-family:sans-serif; padding:60px 20px;">
-  <h2>VietDating</h2>
-  <p>Our app is coming soon on iOS and Android.</p>
+<body onload="redirect()" style="text-align:center; font-family:sans-serif; padding-top:60px;">
+  <h2>VietLoveDating</h2>
+  <p>Redirecting to download...</p>
 
-  <br>
+  <br><br>
 
-  <p>Available soon on:</p>
-  <p>🍎 App Store</p>
-  <p>🤖 Google Play</p>
+  <a href="https://apps.apple.com/app/id6762517920">
+    🍎 Download on App Store
+  </a>
+
+  <br><br>
+
+  <a href="https://play.google.com/store/apps/details?id=com.vietlovedating.app">
+    🤖 Get it on Google Play
+  </a>
+
 </body>
 </html>
